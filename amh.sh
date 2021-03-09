@@ -35,7 +35,7 @@ MysqlVersionDir='MySQL-5.5';
 MysqlVersion='mysql-5.5.62';
 PhpSelectVersion='PHP 5.6';
 PhpVersion='php-5.6.40';
-NginxVersion='tengine-2.3.2';
+NginxVersion='nginx-1.10.0';
 PureFTPdVersion='pure-ftpd-1.0.36';
 BoostVersion='boost_1_60_0';
 
@@ -494,7 +494,7 @@ function InstallNginx()
 {
 	# [dir] /usr/local/nginx
 	echo "[${NginxVersion} Installing] ************************************************** >>";
-	Downloadfile "${NginxVersion}.tar.gz" "http://tengine.taobao.org/download/${NginxVersion}.tar.gz";
+	Downloadfile "${NginxVersion}.tar.gz" http://nginx.org/download/${NginxVersion}.tar.gz";
 	rm -rf $AMHDir/packages/untar/$NginxVersion;
 	echo "tar -zxf ${NginxVersion}.tar.gz ing...";
 	tar -zxf $AMHDir/packages/$NginxVersion.tar.gz -C $AMHDir/packages/untar;

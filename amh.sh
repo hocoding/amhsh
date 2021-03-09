@@ -454,7 +454,7 @@ function InstallPhp()
 		export PKG_CONFIG_PATH="/usr/local/libzip-1.2.0/lib/pkgconfig";
 	fi
 	echo "[${PhpVersion} Installing] ************************************************** >>";
-	Downloadfile "${PhpVersion}.tar.gz" "http://mirrors.sohu.com/php/${PhpVersion}.tar.gz";
+	Downloadfile "${PhpVersion}.tar.gz" "http://mirror.cogentco.com/pub/php/${PhpVersion}.tar.gz";
 	rm -rf $AMHDir/packages/untar/$PhpVersion;
 	echo "tar -zxf ${PhpVersion}.tar.gz ing...";
 	tar -zxf $AMHDir/packages/$PhpVersion.tar.gz -C $AMHDir/packages/untar;

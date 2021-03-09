@@ -370,7 +370,7 @@ function InstallMysql()
 	# [dir] /usr/local/mysql/
 	echo "[${MysqlVersion} Installing] ************************************************** >>";
 
-	Downloadfile "${MysqlVersion}.tar.gz" "https://mirrors.dotsrc.org/mysql/downloads/${MysqlVersionDir}/${MysqlVersion}.tar.gz";
+	Downloadfile "${MysqlVersion}.tar.gz" "https://mirrors.dotsrc.org/mysql/Downloads/${MysqlVersionDir}/${MysqlVersion}.tar.gz";
 	rm -rf $AMHDir/packages/untar/$MysqlVersion;
 	echo "tar -zxf ${MysqlVersion}.tar.gz ing...";
 	tar -zxf $AMHDir/packages/$MysqlVersion.tar.gz -C $AMHDir/packages/untar;
